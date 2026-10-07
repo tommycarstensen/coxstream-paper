@@ -1,6 +1,6 @@
 # CoxStream paper: reproducibility archive
 
-Everything needed to check and rerun the numbers in "CoxStream: Out-of-Core Cox Proportional Hazards Regression by Streaming Newton-Raphson" (Tommy Carstensen and Clara S. Grønkjær): the benchmark harness, the seeded data generator, the result files, the paper source, and the software exactly as it was measured.
+Everything needed to check and rerun the numbers in "CoxStream: Out-of-Core Cox Proportional Hazards Regression by Streaming Newton-Raphson" (Tommy Carstensen and Clara S. Grønkjær): the benchmark harness, the seeded data generator, the result files, the paper source, and the software exactly as it was measured. It is archived on Zenodo: [doi:10.5281/zenodo.23210002](https://doi.org/10.5281/zenodo.23210002).
 
 The software itself is published separately: the Python package `coxstream` ([PyPI](https://pypi.org/project/coxstream/), [GitHub](https://github.com/tommycarstensen/coxstream), [Zenodo](https://doi.org/10.5281/zenodo.20693783)) and the R package `coxstream` ([CRAN](https://cran.r-project.org/package=coxstream), [GitHub](https://github.com/tommycarstensen/coxstream-r), [Zenodo](https://doi.org/10.5281/zenodo.20694001)). Use those to fit models; use this archive to reproduce the paper.
 
@@ -64,4 +64,4 @@ All data are synthetic. Event times follow a Weibull proportional-hazards model 
 - `packages/r/coxstream/src/arrow_c_abi.h` is vendored from the Apache Arrow project under the Apache License 2.0, as `packages/r/coxstream/inst/COPYRIGHTS` states.
 - The manuscript source in `papers/` is included so that the paper can be checked and rebuilt. It is copyright of the two authors and is not under the MIT licence; the licence of the paper is the one stated on its preprint.
 
-To cite the archive, see `CITATION.cff`; to cite the method, cite the paper.
+To cite the archive, use its DOI, [10.5281/zenodo.23210002](https://doi.org/10.5281/zenodo.23210002), which covers every version and resolves to the latest (each version also has a DOI of its own, shown on its Zenodo page; `CITATION.cff` has the rest); to cite the method, cite the paper.

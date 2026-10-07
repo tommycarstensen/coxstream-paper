@@ -13,6 +13,10 @@ authors:
     orcid: "https://orcid.org/0000-0001-7739-1917"
 license: MIT
 repository-code: "https://github.com/tommycarstensen/coxstream-paper"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23210002"
+    description: "All versions of this archive; resolves to the latest"
 keywords:
   - survival analysis
   - Cox proportional hazards
