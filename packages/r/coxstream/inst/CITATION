@@ -1,0 +1,12 @@
+citHeader("To cite coxstream in publications, please use:")
+
+bibentry(
+    bibtype  = "Manual",
+    title    = "coxstream: Memory-Efficient Cox Proportional Hazards via Streaming Newton-Raphson",
+    author   = person("Tommy", "Carstensen",
+                      comment = c(ORCID = "0000-0002-3672-9931")),
+    year     = "2026",
+    note     = "R package version 0.1.0",
+    doi      = "10.5281/zenodo.20694001",
+    url      = "https://github.com/tommycarstensen/coxstream-r"
+)

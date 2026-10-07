@@ -1,0 +1,38 @@
+{
+  "upload_type": "software",
+  "title": "Reproducibility archive for 'CoxStream: Out-of-Core Cox Proportional Hazards Regression by Streaming Newton-Raphson'",
+  "description": "<p>This archive reproduces the numbers in the paper &quot;CoxStream: Out-of-Core Cox Proportional Hazards Regression by Streaming Newton-Raphson&quot; (Tommy Carstensen and Clara S. Gr&oslash;nkj&aelig;r). It holds the benchmark harness in Python and R, the seeded generator of the synthetic Weibull survival cohorts (no real data are used or included), the result files of the speed, memory and tie experiments, a record of the measurement machine and its package versions, the paper's LaTeX source with its generated macros, and the Python and R packages as they were measured.</p><p>Every number and figure in the paper regenerates from the result files, and the experiments can be rerun; the README gives the commands and says what to expect from a rerun. To fit models, use the published packages <code>coxstream</code> on PyPI and CRAN; to cite the method, cite the paper.</p><p>The code and the result files are under the MIT licence. The manuscript source is included so that the paper can be checked and rebuilt; it is copyright of the authors and is not under the MIT licence.</p>",
+  "creators": [
+    {
+      "name": "Carstensen, Tommy",
+      "orcid": "0000-0002-3672-9931"
+    },
+    {
+      "name": "Grønkjær, Clara S.",
+      "orcid": "0000-0001-7739-1917"
+    }
+  ],
+  "keywords": [
+    "survival analysis",
+    "Cox proportional hazards",
+    "out-of-core",
+    "streaming algorithms",
+    "Efron ties",
+    "reproducibility",
+    "benchmark"
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.23196731",
+      "relation": "references",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "10.5281/zenodo.20694001",
+      "relation": "references",
+      "resource_type": "software"
+    }
+  ]
+}

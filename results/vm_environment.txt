@@ -1,0 +1,131 @@
+# CoxPH sweep VM environment
+
+## OS / kernel
+Linux coxph-sweep2.europe-west1-b 7.0.0-1011-gcp #11~24.04.1-Ubuntu SMP PREEMPT Tue Aug 11 20:14:48 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+
+## GCE machine type, CPU platform and disks
+  machine-type: projects/PROJECT/machineTypes/n2-standard-8
+  cpu-platform: Intel Cascade Lake
+NAME    SIZE ROTA MODEL
+loop0  66.8M    0 
+loop1 348.2M    0 
+loop2  50.3M    0 
+loop3  44.7M    0 
+sda     100G    0 PersistentDisk
+
+## CPU
+CPU(s):                                  8
+Model name:                              Intel(R) Xeon(R) CPU @ 2.80GHz
+Thread(s) per core:                      2
+Core(s) per socket:                      4
+Socket(s):                               1
+BogoMIPS:                                5599.99
+Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch ssbd ibrs ibpb stibp ibrs_enhanced fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm avx512f avx512dq rdseed adx smap clflushopt clwb avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves arat avx512_vnni md_clear arch_capabilities
+
+## Memory
+MemTotal:       32858380 kB
+
+## Python + modules + BLAS
+.venv/lib/python3.13/site-packages/numpy/__config__.py:155: UserWarning: Install `pyyaml` for better output
+  warnings.warn("Install `pyyaml` for better output", stacklevel=1)
+python: 3.13.16 ( Linux-7.0.0-1011-gcp-x86_64-with-glibc2.39 )
+  numpy: 2.5.3
+  scipy: 1.18.1
+  pyarrow: 25.0.1
+  cython: 3.3.0
+  lifelines: 0.30.3
+  coxstream: 0.3.0
+  sksurv: 0.28.0
+  pandas: 2.3.3
+  duckdb: 1.5.6
+
+numpy BLAS/LAPACK build:
+{
+  "Compilers": {
+    "c": {
+      "name": "gcc",
+      "linker": "ld.bfd",
+      "version": "14.2.1",
+      "commands": "cc"
+    },
+    "cython": {
+      "name": "cython",
+      "linker": "cython",
+      "version": "3.3.0",
+      "commands": "cython"
+    },
+    "c++": {
+      "name": "gcc",
+      "linker": "ld.bfd",
+      "version": "14.2.1",
+      "commands": "c++"
+    }
+  },
+  "Machine Information": {
+    "host": {
+      "cpu": "x86_64",
+      "family": "x86_64",
+      "endian": "little",
+      "system": "linux"
+    },
+    "build": {
+      "cpu": "x86_64",
+      "family": "x86_64",
+      "endian": "little",
+      "system": "linux"
+    }
+  },
+  "Build Dependencies": {
+    "blas": {
+      "name": "scipy-openblas",
+      "found": true,
+      "version": "0.3.34.106.0",
+      "detection method": "pkgconfig",
+      "include directory": "/opt/_internal/cpython-3.13.14/lib/python3.13/site-packages/scipy_openblas64/include",
+      "lib directory": "/opt/_internal/cpython-3.13.14/lib/python3.13/site-packages/scipy_openblas64/lib",
+      "openblas configuration": "OpenBLAS 0.3.34.106.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64",
+      "pc file directory": "/project/.openblas"
+    },
+    "lapack": {
+      "name": "scipy-openblas",
+      "found": true,
+      "version": "0.3.34.106.0",
+      "detection method": "pkgconfig",
+      "include directory": "/opt/_internal/cpython-3.13.14/lib/python3.13/site-packages/scipy_openblas64/include",
+      "lib directory": "/opt/_internal/cpython-3.13.14/lib/python3.13/site-packages/scipy_openblas64/lib",
+      "openblas configuration": "OpenBLAS 0.3.34.106.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64",
+      "pc file directory": "/project/.openblas"
+    }
+  },
+  "Python Information": {
+    "path": "/tmp/build-env-h653xs07/bin/python",
+    "version": "3.13"
+  },
+  "SIMD Extensions": {
+    "baseline": [
+      "X86_V2"
+    ],
+    "found": [
+      "X86_V3",
+      "X86_V4"
+    ],
+    "not found": [
+      "AVX512_ICL",
+      "AVX512_SPR"
+    ]
+  }
+}
+  env OPENBLAS_NUM_THREADS = (unset)
+  env OMP_NUM_THREADS = (unset)
+  env MKL_NUM_THREADS = (unset)
+
+## R + packages
+R version 4.3.3 (2024-02-29) -- "Angel Food Cake"
+  survival: 3.5.8
+  Cyclops: 3.7.1
+  arrow: 25.0.1
+  bigSurvSGD: 0.0.1
+  coxstream: 0.1.0
+  jsonlite: 2.0.0
+  R BLAS: /usr/lib/x86_64-linux-gnu/blas/libblas.so.3.12.0 
+  R LAPACK: /usr/lib/x86_64-linux-gnu/lapack/liblapack.so.3.12.0 

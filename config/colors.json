@@ -1,0 +1,50 @@
+{
+  "_description": "Project palette. base = the navy, blue and grey family every chart uses; paired_12 = ColorBrewer Paired (12, light/dark pairs); set1_9 = ColorBrewer Set1 (9 qualitative); tableau_10 = matplotlib tab10 (used for scatter facets).",
+  "base": {
+    "navy": "#002555",
+    "blue": "#007dbb",
+    "dark_grey": "#646c6f",
+    "near_black": "#333333",
+    "light_blue_grey": "#ccd3dd",
+    "light_grey": "#e5e9ee",
+    "white": "#ffffff",
+    "black": "#000000"
+  },
+  "paired_12": [
+    "#a6cee3",
+    "#1f78b4",
+    "#b2df8a",
+    "#33a02c",
+    "#fb9a99",
+    "#e31a1c",
+    "#fdbf6f",
+    "#ff7f00",
+    "#cab2d6",
+    "#6a3d9a",
+    "#ffff99",
+    "#b15928"
+  ],
+  "set1_9": [
+    "#e41a1c",
+    "#377eb8",
+    "#4daf4a",
+    "#984ea3",
+    "#ff7f00",
+    "#ffff33",
+    "#a65628",
+    "#f781bf",
+    "#999999"
+  ],
+  "tableau_10": [
+    "#1f77b4",
+    "#ff7f0e",
+    "#2ca02c",
+    "#d62728",
+    "#9467bd",
+    "#8c564b",
+    "#e377c2",
+    "#7f7f7f",
+    "#bcbd22",
+    "#17becf"
+  ]
+}

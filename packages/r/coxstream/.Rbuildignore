@@ -1,0 +1,10 @@
+^\.lintr$
+^src/.*\.o$
+^src/.*\.so$
+^src/.*\.dll$
+^\.git$
+^\.gitignore$
+^cran-comments\.md$
+^\.Rbuildignore$
+^docs$
+^CITATION\.cff$

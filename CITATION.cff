@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this archive, please cite it as below, and cite the paper for the method."
+title: "Reproducibility archive for 'CoxStream: Out-of-Core Cox Proportional Hazards Regression by Streaming Newton-Raphson'"
+abstract: >-
+  Benchmark harness, seeded data generator, result files and paper source for the CoxStream paper: every number in the paper regenerates from the result files, and the speed, memory and tie experiments can be rerun.
+type: software
+authors:
+  - family-names: Carstensen
+    given-names: Tommy
+    orcid: "https://orcid.org/0000-0002-3672-9931"
+  - family-names: Grønkjær
+    given-names: Clara S.
+    orcid: "https://orcid.org/0000-0001-7739-1917"
+license: MIT
+repository-code: "https://github.com/tommycarstensen/coxstream-paper"
+keywords:
+  - survival analysis
+  - Cox proportional hazards
+  - out-of-core
+  - streaming algorithms
+  - Efron ties
+  - reproducibility
+  - benchmark
+references:
+  - type: article
+    title: "CoxStream: Out-of-Core Cox Proportional Hazards Regression by Streaming Newton-Raphson"
+    authors:
+      - family-names: Carstensen
+        given-names: Tommy
+      - family-names: Grønkjær
+        given-names: Clara S.
+    year: 2026
+    notes: "Preprint, in preparation"

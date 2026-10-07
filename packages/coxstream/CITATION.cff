@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "coxstream: Exact out-of-core Cox proportional hazards regression via streaming Newton-Raphson"
+abstract: >-
+  coxstream fits the Cox proportional hazards model on datasets larger than RAM.
+  It computes the exact Efron partial-likelihood estimate by streaming a single
+  time-sorted pass over chunked data per Newton-Raphson iteration, with O(p^2)
+  working memory independent of the number of observations.
+type: software
+authors:
+  - family-names: Carstensen
+    given-names: Tommy
+    orcid: "https://orcid.org/0000-0002-3672-9931"
+    email: "zenodo@tommycarstensen.com"
+version: "0.3.0"
+date-released: "2026-10-06"
+license: MIT
+repository-code: "https://github.com/tommycarstensen/coxstream"
+url: "https://github.com/tommycarstensen/coxstream"
+# Concept DOI only. It always resolves to the newest release, so it never goes
+# stale. A version DOI committed here is by construction the previous release's,
+# which is how this file came to say 0.1.1 while PyPI, the tag and pyproject all
+# said 0.2.0, mislabelling the Zenodo record for v0.2.0.
+doi: "10.5281/zenodo.20693783"
+keywords:
+  - survival analysis
+  - Cox proportional hazards
+  - out-of-core
+  - streaming
+  - epidemiology
+  - registry data

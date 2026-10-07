@@ -1,0 +1,15 @@
+The file src/arrow_c_abi.h is vendored verbatim from the Apache Arrow
+project and is licensed under the Apache License, Version 2.0.
+
+    Copyright The Apache Software Foundation
+    https://www.apache.org/licenses/LICENSE-2.0
+
+It contains only the ABI-stable struct definitions of the Arrow C Data
+Interface and C Stream Interface (plain-C struct layouts and function-pointer
+signatures). It includes no Arrow source code and requires neither the Arrow
+C++ headers nor linking against libarrow.
+
+Reference: https://arrow.apache.org/docs/format/CDataInterface.html
+
+All other files in this package are licensed under the MIT License; see the
+LICENSE file.
